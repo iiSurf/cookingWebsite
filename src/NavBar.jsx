@@ -12,7 +12,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import { styled } from "@mui/material/styles";
+import SearchIcon from "@mui/material/Search";
 import AdbIcon from "@mui/icons-material/Adb";
+
+// Search Bar Style
+
+
 const pages = ["Home", "Recipe", "Blog"];
 const homeSubmenu = ["Products 1", "Products 2", "Products 3"];
 const recipeSubmenu = ["Price 1", "Price 2", "Price 3"];
