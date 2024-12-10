@@ -12,13 +12,49 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { styled } from "@mui/material/styles";
-import SearchIcon from "@mui/material/Search";
+// import { styled } from "@mui/material/styles";
+// import SearchIcon from "@mui/material/Search";
 import AdbIcon from "@mui/icons-material/Adb";
 
 // Search Bar Style
+// const Search = styled("div")(({ theme }) => ({
+//   position: "relative",
+//   borderRadius: theme.shape.borderRadius,
+//   backgroundColor: "#f2f2f2",
+//   "&:hover": {
+//     backgroundColor: "#e6e5e4",
+//   },
+//   marginLeft: 0,
+//   width: "100%",
+//   [theme.breakpoints.up("sm")]: {
+//     width: "auto",
+//   },
+// }));
 
+// const SearchIconBox = styled("div")(({ theme }) => ({
+//   padding: theme.spacing(0, 2),
+//   height: "100%",
+//   position: "absolute",
+//   pointerEvents: "none",
+//   display: "flex",
+//   alignItems: "center",
+//   justifyContent: "center",
+// }));
 
+// const StyledSearchField = styled(InputBase)(({ theme }) => ({
+//   color: "inherit",
+//   "& .MuiInputBase-input": {
+//     padding: theme.spacing(1, 1, 1, 0),
+//     paddingLeft: 'calc(1em + ${theme.spacing(4)})',
+//     transition: theme.transitions.create("width"),
+//     width: "100%",
+//     [theme.breakpoints.up("md")]: {
+//       width: "20ch",
+//     },
+//   },
+// }));
+
+// adding  "Contact", "About" later
 const pages = ["Home", "Recipe", "Blog"];
 const homeSubmenu = ["Products 1", "Products 2", "Products 3"];
 const recipeSubmenu = ["Price 1", "Price 2", "Price 3"];
@@ -43,6 +79,16 @@ const NavBar = () => {
   const handleOpenRecipeMenu = (event) => {
     setAnchorElPrice(event.currentTarget);
   };
+  // Sub menus to be added later
+  // const handleOpenBlogMenu = (event) => {
+  //   setAnchorElBlog(event.currentTarget);
+  // };
+  // const handleOpenContactMenu = (event) => {
+  //   setAnchorElContact(event.currentTarget);
+  // };
+  // const handleOpenAboutMenu = (event) => {
+  //   setAnchorElAbout(event.currentTarget);
+  // };
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -55,6 +101,16 @@ const NavBar = () => {
   const handleCloseRecipeMenu = () => {
     setAnchorElPrice(null);
   };
+  // sub menus to be added later
+  // const handleCloseBlogMenu = () => {
+  //   setAnchorElBlog(null);
+  // };
+  // const handleCloseContactMenu = () => {
+  //   setAnchorElContact(null);
+  // };
+  // const handleCloseAboutMenu = () => {
+  //   setAnchorElAbout(null);
+  // };
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
   };
