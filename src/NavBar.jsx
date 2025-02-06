@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* I will have to look to update MUI Materials from 6.1.10 to 6.4.3 */
+/* Have to figure out what this error means that is coming from google chrome > inspect > console > error: chunk-POEOJJ2X.js:8780 Uncaught SyntaxError: Export 'import_react3' is not defined in module */
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
